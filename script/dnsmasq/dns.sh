@@ -331,7 +331,7 @@ case $action in
         echo -e "${BIYellow}7. Claude${NC}"
         echo -e "${BIBlue}8. Google Gemini${NC}"
         echo -e "${BIYellow}9. Google AiStudio${NC}"
-		echo -e "${BIYellow}10. Microsoft Copilot${NC}"
+	echo -e "${BIYellow}10. Microsoft Copilot${NC}"
         echo -e ""
         read -p "輸入選擇（例如：1）或按 Enter 取消: " region_choice
 
@@ -354,7 +354,7 @@ case $action in
             7) selected_region="Claude";;
             8) selected_region="Google Gemini";;
             9) selected_region="Google AiStudio";;
-			10) selected_region="Microsoft Copilot";;
+	   10) selected_region="Microsoft Copilot";;
             *) echo -e "${BIRed}選擇的區域無效，請重新運行腳本。${NC}"; exit 1;;
         esac
 
