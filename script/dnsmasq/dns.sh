@@ -69,6 +69,7 @@ viu.tv
 viu.com
 viu.now.com
 
+hoy.tv
 "
 
 dns_domains["TW"]="
