@@ -6,89 +6,108 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 declare -A dns_domains
-dns_domains["TW"]="
-gamer.com.tw
-bahamut.com.tw
-hinet.net
-fbcdn.net
-gvt1.com
-digicert.com
-viblast.com
-gamer-cds.cdn.hinet.net
-gamer2-cds.cdn.hinet.net
+dns_domains["HK"]="
 
-hamivideo.hinet.net
-scc.ott.hinet.net
-
-kktv.com.tw
-kktv.me
-kk.stream
-
-myvideo.net.tw
-
-chocotv.com.tw
-line-cdn.net
-line-scdn.net
-linetv.tw
-
-litv.tv
-LiTV.tv
-cdn.hinet.net
-
-4gtv.tv
-
-dcard.tw
-elaott.tv
-cmail20.com
-edu.tw
-gov.tw
-com.tw
-org.tw
-org.tw
-
-ofiii.com
-ofifreepc.akamaized.net
-
-catchplay.com.tw
-catchplay.com
-cloudfront.net
-akamaized.net
-
-biliapi.com
-biliapi.net
-bilibili.com
-bilibili.tv
-bilivideo.com
-
-friday.tw
-"
-dns_domains["JP"]="
-control.kochava.com
-d151l6v8er5bdm.cloudfront.net
-d1sgwhnao7452x.cloudfront.net
 dazn-api.com
 dazn.com
 dazndn.com
-dc2-vodhls-perform.secure.footprint.net
-dca-ll-livedazn-dznlivejp.s.llnwi.net
+indazn.com
+d151l6v8er5bdm.cloudfront.net
+d1sgwhnao7452x.cloudfront.net
 dcalivedazn.akamaized.net
 dcblivedazn.akamaized.net
-indazn.com
-indaznlab.com
-intercom.io
-logx.optimizely.com
-s.yimg.jp
-sentry.io
 
-dmm.com
-dmm.co.jp
-dmm-extension.com
-dmmapis.com
-videomarket.jp
-p-smith.com
-vmdash-cenc.akamaized.net
-img.vm-movie.jp
-bam.nr-data.net
+hotstar.com
+hotstarext.com
+
+bilibili.com
+
+#Bahamut Anime
+bahamut.com.tw
+gamer.com.tw
+gamer-cds.cdn.hinet.net
+gamer2-cds.cdn.hinet.net
+
+nowe.com
+nowestatic.com
+
+mytvsuper.com
+mytvsuperlimited.hb.omtrdc.net
+mytvsuperlimited.sc.omtrdc.net
+tvb.com
+
+44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
+bcbolthboa-a.akamaihd.net
+dai3fd1oh325y.cloudfront.net
+hboasia1-i.akamaihd.net
+hboasia2-i.akamaihd.net
+hboasia3-i.akamaihd.net
+hboasia4-i.akamaihd.net
+hboasia5-i.akamaihd.net
+hboasialive.akamaized.net
+hbogoprod-vod.akamaized.net
+hbolb.onwardsmg.com
+hbounify-prod.evergent.com
+hbogo.co.th
+hbogoasia.com
+hbogoasia.hk
+hbogoasia.id
+hbogoasia.ph
+hbogoasia.sg
+hbogoasia.tw
+
+max.com
+hbo.com
+hbogo.com
+hbomax.com
+hbomaxcdn.com
+hbonow.com
+maxgo.com
+discomax.com
+
+viu.tv
+viu.com
+viu.now.com
+
+"
+
+dns_domains["TW"]="
+
+kfs.io
+kktv-theater.kk.stream
+kkbox.com
+kkbox.com.tw
+kktv.com.tw
+kktv.me
+
+litv.tv
+itvfreepc.akamaized.net
+
+cdn.plyr.io
+myvideo.net.tw
+
+4gtv.tv
+4gtvfreepc-cds.cdn.hinet.net
+4gtvfreepcvod-cds.cdn.hinet.net
+4gtvpc-cds.cdn.hinet.net
+4gtvpcvod-cds.cdn.hinet.net
+
+d3c7rimkq79yfu.cloudfront.net
+linetv.tw
+
+cdn.hinet.net
+hamivideo.hinet.net
+scc.ott.hinet.net
+
+catchplay.com
+d2ivmxp5z2ww0n.cloudfront.net
+ols-ww100-cp.akamaized.net
+tra-www000-cp.akamaized.net
+
+video.friday.tw
+"
+
+dns_domains["JP"]="
 
 abema.io
 abema.tv
@@ -105,24 +124,13 @@ bucketeer.jp
 abema.adx.promo
 hayabusa.media
 
-vod-playout-abematv.akamaized.net
-live-playout-abematv.akamaized.net
-streaming-api-cf.p-c2-x.abema-tv.com
-
-dmc.nico
-nicovideo.jp
-nimg.jp
-socdm.com
-
-telasa.jp
-kddi-video.com
-videopass.jp
-d2lmsumy47c8as.cloudfront.net
-
-paravi.jp
-
-unext.jp
-nxtv.jp
+dmm-extension.com
+dmm.co.jp
+dmm.com
+videomarket.jp
+p-smith.com
+vmdash-cenc.akamaized.net
+img.vm-movie.jp
 
 hulu.com
 huluad.com
@@ -146,62 +154,30 @@ webantenna.info
 doubleclick.net
 usergram.info
 hjholdings.tv
-
-tver.jp
-edge.api.brightcove.com
-players.brightcove.net
-
-wowow.co.jp
-
-fujitv.co.jp
-stream.ne.jp
-
-radiko.jp
-radionikkei.jp
-smartstream.ne.jp
-
-clubdam.com
-
-cygames.jp
-konosubafd.jp
-colorfulpalette.org
-cds1.clubdam.com
-api.worldflipper.jp
-
-music-book.jp
-overseaauth.music-book.jp
-
-gyao.yahoo.co.jp
-
-id.zaq.ne.jp
 "
 
-dns_domains["HK"]="
-nowe.com
-nowestatic.com
+dns_domains["Netflix"]="
 
-viu.tv
-viu.com
-viu.now.com
+netflix.com
+netflix.net
+nflximg.com
+nflximg.net
+nflxvideo.net
+nflxext.com
+nflxso.net
 
-
-mytvsuper.com
-mytvsuperlimited.hb.omtrdc.net
-mytvsuperlimited.sc.omtrdc.net
-tvb.com
-
-hoy.tv
-"
-
-dns_domains["SG"]="
-mewatch.sg
-starhubgo.com
-failoverstarhub.akamaized.net
-scvm1sc0-ssm.anycast.nagra.com
-starhubtvplus.com
+disney.connections.edge.bamgrid.com
+disney.api.edge.bamgrid.com
+disney-plus.net
+disneyplus.com
+dssott.com
+disneynow.com
+disneystreaming.com
+cdn.registerdisney.go.com
 "
 
 dns_domains["Tiktok"]="
+
 byteoversea.com
 ibytedtos.com
 ipstatp.com
@@ -211,96 +187,39 @@ tiktok.com
 tik-tokapi.com
 tiktokcdn.com
 tiktokv.com
-
 "
 
-dns_domains["TVBAnywhere"]="
-tvbanywhere.com
-tvbanywhere.com.sg
-uapisfm.tvbanywhere.com.sg
-tvb.com
-tvb.com.au
-tvbc.com.cn
-tvbeventpower.com.hk
-tvbusa.com
-tvbweekly.com
-tvmedia.net.au
+dns_domains["OpenAI"]="
 
-"
-
-dns_domains["Max"]="
-max.com
-hbo.com
-hbogo.com
-hbomax.com
-hbomaxcdn.com
-hbonow.com
-maxgo.com
-discomax.com
-
-
-"
-
-dns_domains["Disney_Netflix"]="
-e13252.dscg.akamaiedge.net
-h-netflix.online-metrix.net
-netflix.com.edgesuite.net
-cookielaw.org
-fast.com
-flxvpn.net
-netflix.ca
-netflix.com
-netflix.com.au
-netflix.com.edgesuite.net
-netflix.net
-netflixdnstest0.com
-netflixdnstest1.com
-netflixdnstest10.com
-netflixdnstest2.com
-netflixdnstest3.com
-netflixdnstest4.com
-netflixdnstest5.com
-netflixdnstest6.com
-netflixdnstest7.com
-netflixdnstest8.com
-netflixdnstest9.com
-netflixinvestor.com
-netflixstudios.com
-netflixtechblog.com
-nflxext.com
-nflximg.com
-nflximg.net
-nflxsearch.net
-nflxso.net
-nflxvideo.net
-
-disney.api.edge.bamgrid.com
-disney-plus.net
-disneyplus.com
-dssott.com
-disneynow.com
-disneystreaming.com
-cdn.registerdisney.go.com
-
-
-hotstar.com
-hotstarext.com
-"
-
-dns_domains["ChatGPT"]="
 openai.com
 chatgpt.com
-cdn.auth0.com
-azureedge.net
-sentry.io
-azurefd.net
-intercomcdn.com
-intercom.io
-identrust.com
-challenges.cloudflare.com
-ai.com
+sora.com
 oaistatic.com
 oaiusercontent.com
+"
+
+dns_domains["Claude"]="
+
+anthropic.com
+claude.ai
+"
+
+dns_domains["Google Gemini"]="
+
+gemini.google.com
+proactivebackend-pa.googleapis.com
+"
+
+dns_domains["Google AiStudio"]="
+
+aistudio.google.com
+alkalimakersuite-pa.clients6.google.com
+generativelanguage.googleapis.com
+"
+
+dns_domains["Microsoft Copilot"]="
+
+copilot.microsoft.com
 "
 
 RED='\033[0;31m'
@@ -329,53 +248,44 @@ NC='\033[0m' # No Color
 
 show_info() {
     echo -e ""
-    echo -e "  ${On_Yellow}Dnsmasq 一鍵安裝腳本v1.0.5 (22/11/2024更新) ${NC}"
-    echo -e ""
-    echo -e "  ${BIGreen}作者${NC}: ${BIYellow}KKKKKCAT${NC}"
-    echo -e "  ${BIGreen}博客${NC}: ${BIYellow}https://kkcat.blog${NC}"
-    echo -e "  ${BIGreen}GitHub 項目${NC}: ${BIYellow}https://github.com/KKKKKCAT/KKScript/tree/main/script/dnsmasq${NC}"
-    echo -e "  ${BIGreen}Telegram 頻道${NC}: ${BIYellow}https://t.me/kkkkkcat${NC}"
-    echo -e ""
-    echo -e "  ${BIWhite} /\_/\ ${NC}"
-    echo -e "  ${BIWhite}( o.o )${NC}"
-    echo -e "  ${BIWhite} > ^ <${NC}"
-    echo -e "${On_ICyan}                                                      ${NC}"
+    echo -e "  ${On_Yellow}Dnsmasq 一鍵安裝腳本v1.0.6 (23/01/2025更新) ${NC}"
     echo -e ""
     echo -e "${BICyan}系統 DNS：${NC}${BIWhite}$(grep 'nameserver' /etc/resolv.conf | awk '{ print $2 }' | tr '\n' ' ')${NC}"
     if [ -f /etc/dnsmasq.conf ]; then
+        hk_dns=$(grep 'hotstar.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
         tw_dns=$(grep 'kktv.me' /etc/dnsmasq.conf | cut -d '/' -f 4)
         jp_dns=$(grep 'dmm.co.jp' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        hk_dns=$(grep 'viu.tv' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        sg_dns=$(grep 'mewatch.sg' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        tiktok_dns=$(grep 'tiktok.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        tvbanywhere_dns=$(grep 'tvbeventpower.com.hk' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        max_dns=$(grep 'max.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        disney_dns=$(grep 'netflix.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
-        chatgpt_dns=$(grep 'openai.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        Netflix_dns=$(grep 'disneyplus.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        Tiktok_dns=$(grep 'tiktok.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        OpenAI_dns=$(grep 'openai.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        Claude_dns=$(grep 'claude.ai' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        GoogleGemini_dns=$(grep 'gemini.google.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+        GoogleAiStudio_dns=$(grep 'aistudio.google.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+		MicrosoftCopilot_dns=$(grep 'copilot.microsoft.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
     else
+        hk_dns=""
         tw_dns=""
         jp_dns=""
-        hk_dns=""
-        sg_dns=""
-        tiktok_dns=""
-        tvbanywhere_dns=""
-        max_dns=""
-        disney_dns=""
-        chatgpt_dns=""
+        Netflix_dns=""
+        Tiktok_dns=""
+        OpenAI_dns=""
+        Claude_dns=""
+        GoogleGemini_dns=""
+        GoogleAiStudio_dns=""
+		MicrosoftCopilot_dns=""
     fi
 
+    echo -e "${BICyan}HK DNS：${NC}${BIWhite}${hk_dns}${NC}"
     echo -e "${BICyan}TW DNS：${NC}${BIWhite}${tw_dns}${NC}"
     echo -e "${BICyan}JP DNS：${NC}${BIWhite}${jp_dns}${NC}"
-    echo -e "${BICyan}HK DNS：${NC}${BIWhite}${hk_dns}${NC}"
-    echo -e "${BICyan}SG DNS：${NC}${BIWhite}${sg_dns}${NC}"
-    echo -e "${BICyan}Tiktok DNS：${NC}${BIWhite}${tiktok_dns}${NC}"
-    echo -e "${BICyan}TVBAnywhere+ DNS：${NC}${BIWhite}${tvbanywhere_dns}${NC}"
-    echo -e "${BICyan}HBO Max DNS：${NC}${BIWhite}${max_dns}${NC}"
-    echo -e "${BICyan}Disney+/Netflix/Hotstar DNS：${NC}${BIWhite}${disney_dns}${NC}"
-    echo -e "${BICyan}ChatGPT DNS：${NC}${BIWhite}${chatgpt_dns}${NC}"
-
-    echo -e ""
-    echo -e "${On_IWhite}                                                      ${NC}"
+    echo -e "${BICyan}Netflix/Disney+ DNS：${NC}${BIWhite}${Netflix_dns}${NC}"
+    echo -e "${BICyan}Tiktok DNS：${NC}${BIWhite}${Tiktok_dns}${NC}"
+    echo -e "${BICyan}OpenAI DNS：${NC}${BIWhite}${OpenAI_dns}${NC}"
+    echo -e "${BICyan}Claude DNS：${NC}${BIWhite}${Claude_dns}${NC}"
+    echo -e "${BICyan}GoogleGemini DNS：${NC}${BIWhite}${GoogleGemini_dns}${NC}"
+    echo -e "${BICyan}GoogleAiStudio DNS：${NC}${BIWhite}${GoogleAiStudio_dns}${NC}"
+    echo -e "${BICyan}MicrosoftCopilot DNS：${NC}${BIWhite}${MicrosoftCopilot_dns}${NC}"
+	
 }
 
 clear
@@ -411,15 +321,16 @@ case $action in
         # 配置 dnsmasq
         echo -e ""
         echo -e "${BIWhite}請選擇 DNS 區域:${NC}"
-        echo -e "${BIYellow}1. 台灣 (TW)${NC}"
-        echo -e "${BIBlue}2. 日本 (JP)${NC}"
-        echo -e "${BIYellow}3. 香港 (HK)${NC}"
-        echo -e "${BIBlue}4. 新加坡 (SG)${NC}"
+        echo -e "${BIYellow}1. 香港 (HK)${NC}"
+        echo -e "${BIBlue}2. 台湾 (TW)${NC}"
+        echo -e "${BIYellow}3. 日本 (JP)${NC}"
+        echo -e "${BIBlue}4. Netflix${NC}"
         echo -e "${BIYellow}5. Tiktok${NC}"
-        echo -e "${BIBlue}6. TVBAnywhere+${NC}"
-        echo -e "${BIYellow}7. HBO Max${NC}"
-        echo -e "${BIBlue}8. Disney+/Netflix/Hotstar${NC}"
-        echo -e "${BIYellow}9. ChatGPT${NC}"
+        echo -e "${BIBlue}6. OpenAI${NC}"
+        echo -e "${BIYellow}7. Claude${NC}"
+        echo -e "${BIBlue}8. Google Gemini${NC}"
+        echo -e "${BIYellow}9. Google AiStudio${NC}"
+		echo -e "${BIYellow}10. Microsoft Copilot${NC}"
         echo -e ""
         read -p "輸入選擇（例如：1）或按 Enter 取消: " region_choice
 
@@ -433,15 +344,16 @@ case $action in
 
         # 驗證區域選擇，並生成 DNS 配置
         case $region_choice in
-            1) selected_region="TW";;
-            2) selected_region="JP";;
-            3) selected_region="HK";;
-            4) selected_region="SG";;
+            1) selected_region="HK";;
+            2) selected_region="TW";;
+            3) selected_region="JP";;
+            4) selected_region="Netflix";;
             5) selected_region="Tiktok";;
-            6) selected_region="TVBAnywhere";;
-            7) selected_region="Max";;
-            8) selected_region="Disney_Netflix";;
-            9) selected_region="ChatGPT";;
+            6) selected_region="OpenAI";;
+            7) selected_region="Claude";;
+            8) selected_region="Google Gemini";;
+            9) selected_region="Google AiStudio";;
+			10) selected_region="Microsoft Copilot";;
             *) echo -e "${BIRed}選擇的區域無效，請重新運行腳本。${NC}"; exit 1;;
         esac
 
