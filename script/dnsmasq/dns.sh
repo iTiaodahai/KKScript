@@ -262,7 +262,7 @@ show_info() {
         Claude_dns=$(grep 'claude.ai' /etc/dnsmasq.conf | cut -d '/' -f 4)
         GoogleGemini_dns=$(grep 'gemini.google.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
         GoogleAiStudio_dns=$(grep 'aistudio.google.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
-		MicrosoftCopilot_dns=$(grep 'copilot.microsoft.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
+	MicrosoftCopilot_dns=$(grep 'copilot.microsoft.com' /etc/dnsmasq.conf | cut -d '/' -f 4)
     else
         hk_dns=""
         tw_dns=""
