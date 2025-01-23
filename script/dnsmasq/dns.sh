@@ -273,7 +273,7 @@ show_info() {
         Claude_dns=""
         GoogleGemini_dns=""
         GoogleAiStudio_dns=""
-		MicrosoftCopilot_dns=""
+	MicrosoftCopilot_dns=""
     fi
 
     echo -e "${BICyan}HK DNS：${NC}${BIWhite}${hk_dns}${NC}"
